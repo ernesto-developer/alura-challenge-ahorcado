@@ -7,14 +7,14 @@
     <title>Juego del Ahorcado</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <img src="images/Vector.png" alt="logoAlura">
+<body class="body-page">
+    <img class="logo-Alura" src="images/Vector.png" alt="logoAlura">
 
     <div class="btns_Pagina_Principal">
         <input class="btn_Iniciar_Juego" type="button" value="Iniciar Juego">
         <input class="btn_agrgegar_palabra" type="button" value="Agregar nueva palabra">
     </div>
-        <p>Igrese una palabra</p>
+        <p class="text-ingrese">Igrese una palabra</p>
         <div class="maximo_de_caracteres">
             <img src="images/admiracionIcono.png" alt="icon_alert">
             <p>Max.8 letras</p>
@@ -24,6 +24,7 @@
             <input class="btn_guardar_empezar" type="button" value="Guardar y empezar">
             <input class="btn_cancelar" type="button" value="Cancelar">
         </div>
+      
         
         <canvas class="canvas" width="1080" height="600"></canvas>
 
@@ -34,12 +35,10 @@
 
     
 
+    <script src="app.js"></script> 
 
-    <script src="app.js"></script>
-
+    <!-- <script src="test.js"></script> -->
     
 </body>
 </html>
-<!--
-    <script src="test.js"></script>
--->
+
