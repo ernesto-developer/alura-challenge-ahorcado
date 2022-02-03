@@ -18,14 +18,15 @@ function drawPoste(){
 
 
     pincel.beginPath()
-    pincel.moveTo(posX +220,posY -450);
+    pincel.moveTo(posX +220,posY -476);
     pincel.lineTo(posX +220,posY -500);
     pincel.lineTo(posX + 50,posY -500);
     pincel.lineTo(posX + 50,posY -140);
     pincel.lineTo(posX +220,posY -140);
     pincel.lineTo(posX - 40,posY -140);
-    pincel.lineTo(posX +220,posY -140);
-    pincel.strokeStyle = "blue";
+    pincel.strokeStyle = "#0A3871";
+    pincel.lineWidth = 5;
+    pincel.lineCap = "round";
     pincel.stroke();
 
 
@@ -34,19 +35,19 @@ function drawPoste(){
 function boyHead(){
 
     pincel.beginPath();
-    pincel.fillStyle = "orange"
+    pincel.strokeStyle = "#0A3871"
     pincel.arc(posX +220,posY-435,40,0,2*Math.PI);
-    pincel.fill();
+    pincel.stroke();
 
 }
 function boybody(){
 
     pincel.beginPath(),
  
-    pincel.moveTo(posX +220,posY-435);
+    pincel.moveTo(posX +220,posY-395);
     pincel.lineTo(posX +220,posY - 280);
 
-    pincel.strokeStyle = "orange";
+    pincel.strokeStyle = "#0A3871";
     pincel.stroke();
 
 }
@@ -56,7 +57,7 @@ function boyLeftArm(){
     pincel.moveTo(posX +220,posY-375);
     pincel.lineTo(posX +155,posY - 310);
 
-    pincel.strokeStyle = "orange";
+    pincel.strokeStyle = "#0A3871";
     pincel.stroke();
 
 }
@@ -66,7 +67,7 @@ function boyRightArm(){
     pincel.moveTo(posX +220,posY-375);
     pincel.lineTo(posX +285,posY - 310);
 
-    pincel.strokeStyle = "orange";
+    pincel.strokeStyle = "#0A3871";
     pincel.stroke();
 }
 function boyLeftFoot(){
@@ -75,7 +76,7 @@ function boyLeftFoot(){
     pincel.moveTo(posX +220,posY-280);
     pincel.lineTo(posX +155,posY - 200);
 
-    pincel.strokeStyle = "orange";
+    pincel.strokeStyle = "#0A3871";
     pincel.stroke();
 }
 function boyRightFoot(){
@@ -84,7 +85,7 @@ function boyRightFoot(){
     pincel.moveTo(posX +220,posY-280);
     pincel.lineTo(posX +285,posY - 200);
 
-    pincel.strokeStyle = "orange";
+    pincel.strokeStyle = "#0A3871";
     pincel.stroke();
 }
 
@@ -153,7 +154,8 @@ function drawLineas(x){
     pincel.beginPath();
     pincel.moveTo(x,posY - 50);
     pincel.lineTo(x + 40,posY - 50 );
-    pincel.strokeStyle = "black";
+    pincel.strokeStyle = "#0A3871";
+    pincel.lineWidth = 4;
     pincel.stroke();
 
 }
@@ -162,7 +164,7 @@ function drawLineas(x){
 function drawWord(x , i){
         
         pincel.beginPath();
-        correctWords.includes(palabra[i])? pincel.fillStyle = "red" :  pincel.fillStyle = "transparent";
+        correctWords.includes(palabra[i])? pincel.fillStyle = "#0A3871" :  pincel.fillStyle = "transparent";
         pincel.font = "60px serif";
         pincel.fillText(palabra[i],x,posY -60);
 
@@ -176,7 +178,7 @@ function drawWrongWord(){
         posXWrongWords = posXWrongWords + 40;
 
         pincel.beginPath();
-        pincel.fillStyle = "black";
+        pincel.fillStyle = "#495057";
         pincel.font = "20px bold";
         pincel.fillText(wrongWords[i],posXWrongWords,posY-10);
     }
@@ -254,8 +256,8 @@ function keyEvent(){
            posX = pantalla.width / 2 - 95;
            posXWrongWords = pantalla.width / 2 -45;  
           // gridBoard();
+          drawBoy();
            drawPoste();
-           drawBoy();
            completeboy.forEach( fn => { fn(); });
            
 
@@ -272,8 +274,9 @@ if(firstTime){
     keyEvent();
     posX = pantalla.width / 2 - 95;
     posXWrongWords = pantalla.width / 2 -45;            
-   // gridBoard();
+    gridBoard();
     drawPoste();
+    
    
 
 }else{
