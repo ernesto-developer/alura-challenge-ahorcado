@@ -5,9 +5,9 @@
     position: relative;
 }
 
-
+/* ###################################################### BTNS PARA INGRESAR PALABRA  ######################################## */
 .btns_de_ingresar_palabra{
-    display: flex;
+    display: none;
     position: absolute;
     margin-top: 33%;
     margin-left: 23%;
@@ -21,6 +21,8 @@
     border-radius: 24px;
     color: white;
     margin-right: 12px;
+    font-size: 16px;
+    line-height: 19px;
     cursor: pointer;
 }
 .btns_de_ingresar_palabra .btn_cancelar{
@@ -31,11 +33,13 @@
     padding: 24px;
     color: #0A3871;
     margin-left: 12px;
+    font-size: 16px;
+    line-height: 19px;
     cursor: pointer;
 }
-
+/* ######################################################## BTNS PAGINA PRINCIPAL ######################################## */
 .btns_Pagina_Principal{
-    display: none;
+    display: flex;
     align-items: center;
     position: absolute;
     flex-direction: column;
@@ -59,7 +63,7 @@
      cursor: pointer;
 
 }
-.btns_Pagina_Principal .btn_agrgegar_palabra{
+.btns_Pagina_Principal .btn_agregar_palabra{
     padding: 24px;
     margin-top: 10%;
     width: 280px;
@@ -74,26 +78,55 @@
     line-height: 19px;
     cursor: pointer;
 }
+/* ######################################################### BTNS PANTALLA DEL JUEGO ############################################ */
 .btns_pantalla_del_juego{
-    display:  none;
-}
-#btnX{
-
+    display: none;
     position: absolute;
-    margin-left: 200px;
-    margin-top: 500px;
+    margin-top: 40%;
+    margin-left: 28%;
+    
 }
+.btns_pantalla_del_juego .btn_nuevo_juego{
+
+    width: 332px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    color: white;
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+
+}
+.btns_pantalla_del_juego .btn_desistir{
+
+    width: 332px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    color: #0A3871;
+    margin-left: 12px;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+
+}
+/* ###################################################### CANVAS ###################################################### */
 .canvas{
 display: none;
 position: absolute;
+margin-left: 15%;
 }
+/* ###################################################### LOGO ALURA #################################################### */
 .logo-Alura{
     position: absolute;
     margin-left: 3%;
     margin-top: 1.3%;
 }
+/* ############################################################### LABEL DE MAXIMO DE CARACTERES ############################ */
 .maximo_de_caracteres{
-    display:flex;
+    display:none;
     flex-direction: row;
     
     position: absolute;
@@ -117,8 +150,9 @@ position: absolute;
   
 
 }
+/* ######################################################################## CAMPO Y TEXTO PARA INGRESAR TEXTO ############################## */
 .text-ingrese{
-    display: flex;
+    display: none;
     position:absolute;
     font-size: 32px;
     font-family: normal;
@@ -126,8 +160,50 @@ position: absolute;
     color: #0A3871;
     margin-top: 13%;
     margin-left: 23%;
+    cursor: pointer;
+}
+.campo-text-ingrese{
+
+    display: none;
+    position:absolute;
+    font-size: 50px;
+    font-family: normal;
+    line-height: 150%;
+    color: #0A3871;
+    margin-top: 13%;
+    margin-left: 23%;
+    cursor: pointer;
+    border: none;
+    background: #F3F5FC;
+    text-transform: uppercase;
+    
+
 }
 
-/* TODO DAR ESTILO AL CAMPO PARA INGRESAR EL TEXTO*/
+/* #########################################################################################################################################  */
+/* ############################################################### ACTIVAICONES Y DESACTIVACIONES ##########################################  */
+/* #########################################################################################################################################  */
 
+.btns_Pagina_Principal-off{
 
+    display: none;
+
+}
+.btns_pantalla_del_juego-on{
+    display: flex;
+}
+.canvas-on{
+    display: flex;
+}
+.btns_de_ingresar_palabra-on{
+    display: flex;
+}
+.maximo_de_caracteres-on{
+    display: flex;
+}
+.text-ingrese-on{
+    display: flex;
+}
+.campo-text-ingrese-on{
+    display: flex;
+}

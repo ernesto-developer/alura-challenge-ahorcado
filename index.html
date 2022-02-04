@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,39 +8,40 @@
     <title>Juego del Ahorcado</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="body-page">
     <img class="logo-Alura" src="images/Vector.png" alt="logoAlura">
 
     <div class="btns_Pagina_Principal">
         <input class="btn_Iniciar_Juego" type="button" value="Iniciar Juego">
-        <input class="btn_agrgegar_palabra" type="button" value="Agregar nueva palabra">
+        <input class="btn_agregar_palabra" type="button" value="Agregar nueva palabra">
     </div>
-        <p class="text-ingrese">Igrese una palabra</p>
-        <input type="text" class="campo-text-ingrese" >
-        <div class="maximo_de_caracteres">
-            <img class="icon-warning" src="images/admiracionIcono.png" alt="icon_alert">
-            <p class="texto-maximo">Maximo 8 letras</p>
-        </div>
+    <p class="text-ingrese">Igrese una palabra</p>
+    <input type="text" class="campo-text-ingrese" autofocus="autofocus">
+    <div class="maximo_de_caracteres">
+        <img class="icon-warning" src="images/admiracionIcono.png" alt="icon_alert">
+        <p class="texto-maximo">Maximo 8 letras</p>
+    </div>
 
-        <div class="btns_de_ingresar_palabra">
-            <input class="btn_guardar_empezar" type="button" value="Guardar y empezar">
-            <input class="btn_cancelar" type="button" value="Cancelar">
-        </div>
-      
-        
-        <canvas class="canvas" width="1080" height="600"></canvas>
+    <div class="btns_de_ingresar_palabra">
+        <input class="btn_guardar_empezar" type="button" value="Guardar y empezar">
+        <input class="btn_cancelar" type="button" value="Cancelar">
+    </div>
 
-        <div class="btns_pantalla_del_juego">
-            <input class="btn_nuevo_juego" type="button" value="Nuevo juego" id="btnX">
-            <input class="btn_desistir" type="button" value="Desistir">
-        </div>
 
-    
+    <canvas class="canvas" width="1080" height="550"></canvas>
 
-    <script src="app.js"></script> 
+    <div class="btns_pantalla_del_juego">
+        <input class="btn_nuevo_juego" type="button" value="Nuevo juego" id="btnX">
+        <input class="btn_desistir" type="button" value="Desistir">
+    </div>
+
+
+
+    <script src="app.js"></script>
 
     <!-- <script src="test.js"></script> -->
-    
-</body>
-</html>
 
+</body>
+
+</html>
