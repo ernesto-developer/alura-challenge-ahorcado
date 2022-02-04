@@ -7,10 +7,35 @@
 
 
 .btns_de_ingresar_palabra{
-    display: none;
-}
-.btns_Pagina_Principal{
     display: flex;
+    position: absolute;
+    margin-top: 33%;
+    margin-left: 23%;
+
+}
+.btns_de_ingresar_palabra .btn_guardar_empezar{
+
+    width: 332px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    color: white;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.btns_de_ingresar_palabra .btn_cancelar{
+
+    width: 332px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    color: #0A3871;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.btns_Pagina_Principal{
+    display: none;
     align-items: center;
     position: absolute;
     flex-direction: column;
@@ -68,10 +93,41 @@ position: absolute;
     margin-top: 1.3%;
 }
 .maximo_de_caracteres{
-    display:none;
+    display:flex;
+    flex-direction: row;
+    
+    position: absolute;
+    margin-top: 31%;
+    margin-left: 23%;
+    
+
+}
+.maximo_de_caracteres .icon-warning{
+
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+}
+      
+.maximo_de_caracteres .texto-maximo{
+
+    font-size: 12px;
+    line-height: 150%;
+    margin: 0px 0px;
+  
+
 }
 .text-ingrese{
-    display: none;
+    display: flex;
+    position:absolute;
+    font-size: 32px;
+    font-family: normal;
+    line-height: 150%;
+    color: #0A3871;
+    margin-top: 13%;
+    margin-left: 23%;
 }
+
+/* TODO DAR ESTILO AL CAMPO PARA INGRESAR EL TEXTO*/
 
 
