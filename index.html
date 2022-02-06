@@ -17,7 +17,7 @@
         <input class="btn_agregar_palabra" type="button" value="Agregar nueva palabra">
     </div>
     <p class="text-ingrese">Igrese una palabra</p>
-    <input type="text" class="campo-text-ingrese" autofocus="autofocus">
+    <input type="text" class="campo-text-ingrese" autofocus="autofocus" onkeyup="this.value=TextInput(this.value)">
     <div class="maximo_de_caracteres">
         <img class="icon-warning" src="images/admiracionIcono.png" alt="icon_alert">
         <p class="texto-maximo">Maximo 8 letras</p>
